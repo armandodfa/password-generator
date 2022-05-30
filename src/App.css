@@ -1,38 +1,65 @@
-.App {
+body{
+  background-color: rgb(1, 27, 53);
+  color: #fff;
+}
+.generator{
+  background-color: rgb(2, 53, 97);
+  width: 400px;
+  margin: 150px auto;
+  padding: 20px;
+  border-radius: 20px;
+}
+div.password{
+  display: grid;
+  grid-template-columns: auto min-content;
+  border-radius: 10px;
+  overflow: hidden;
+}
+div.password input{
+  padding: 7px 10px;
+  background-color: rgb(7, 135, 248);
+  border: 0;
+  color: #fff;
+}
+button{
+  background-color: rgb(4, 104, 190);
+  color: #fff;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  border: 0;
+  cursor: pointer;
+}
+div.range{
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: 1fr min-content;
+}
+div.range span{
+  background-color: rgb(0,0,0,0.1);
+  padding: 10px;
+  margin-left: 20px;
+  min-width: 30px;
   text-align: center;
+  border-radius: 10px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+div.options{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+div.option label{
+  display: block;
+  background-color: rgb(0,0,0,0.2);
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+div.option label span{
+  margin: 5px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button.generate{
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
 }
